@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+		font-size: 1.3em;
+		background-color: beige;
+
+		}
+		content{
+		width:90%;
+		margin:auto;
+		}
+
+		form {
+		margin-left:5%;
+		}
+		input {
+		margin-bottom:2%;
+		}
+		input#submit {
+		display:block;
+		background-color:#33ff99;
+		font-weight:bold;
+		padding: 20px;
+		font-size: 1.5em;
+		}
+
+		select option {
+		font-size: 1.75em;
+		width: 150px;
+		}
+
+	</style>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  First Name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+
+  Last Name:<br>
+  <input type="text" name="lastname" value="">
+  <br>
+
+  Email Address:<br>
+  <input type="text" name="Email Address">
+  <br><br>
+
+  <fieldset>
+  	<legend>How Often You listen To Music</legend>
+	  <input type="radio" name="option1" value="1"> A couple of minutes<br>
+	  <input type="radio" name="option2" value="2"> A couple of hours<br>
+	  <input type="radio" name="option3" value="3"> Not often<br>
+	  <input type="radio" name="option4" value="4"> Never<br>
+  </fieldset><br>
+
+  <fieldset>
+  	<legend>Favorite Music Genres</legend>
+	  <input type="checkbox" name="Rock" value="1"> Rock<br>
+	  <input type="checkbox" name="Rap" value="2"> Rap<br>
+	  <input type="checkbox" name="Metal" value="3"> Metal<br>
+  </fieldset><br>
+
+  <h2>Where Do You Listen To Music</h2>
+  <select>
+	  <option value="First">On my way to work</option>
+	  <option value="Second">At Home</option>
+	  <option value="Third">While working out</option>
+	  <option value="Fourth">Never</option>
+  </select>
+  <br>
+  <h2>What role does music play in your life</h2>
+  <textarea rows="3" cols="60"> </textarea> 
+  <br><br>
+
+  <input type="submit" value="Submit" >
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
