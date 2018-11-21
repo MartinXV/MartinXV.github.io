@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		label {font-weight:bold; color:green;}
+	#range{color:red;} 
+	.column {float:left;padding:20px;}
+
+	.column {
+    float: left;
+    width: 50%;
+	}	
+	div {
+    column-count: 2;
+}
+
+	</style>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  Name:<br>
+  <input type="text" name="name" value="" >
+  <br>
+
+  Email Address:<br>
+  <input type="text" name="Email Address" required>
+  <br><br>
+
+  <input type="range" min="1" max="100" onchange="showValue(this.value)">
+  <span id="range">0</span> <br>
+
+  <input list="browsers">
+
+	<datalist id="browsers">
+	  <option value="Internet Explorer">
+	  <option value="Firefox">
+	  <option value="Chrome">
+	  <option value="Opera">
+	  <option value="Safari">
+	</datalist><br>
+
+  <input type="image" src="submit.jpg" alt="submit">
+</form> 
+<br><br><br>
+<div class="row">
+
+  <div class="column">
+  	<p>This is not the real submit button</p>
+  	<img src="submit.jpg">
+  </div>
+
+  <div class="column">
+  	<p>This is also not the real submit button</p>
+  	<img src="submit.jpg">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
+
+
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+
+</body>
+</html>
