@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<title>Cambridge</title>
+<link rel="stylesheet" href="style.css">
+<meta name="keywords" content="Cambridge,tattoo,redemption,chameleon">
+<meta name="author" content="Pedro Martins">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	
+	#Left.column {
+		float: left;
+		position: relative;
+		left:150px;	
+		width: 40%;
+						}
+
+	#Right.column {
+		float: right;
+		position: relative;
+		right:250px;
+		top: 200px;
+					}
+	.text_bg{
+	    background-color: #4D483D;
+	    border-style: solid;
+	    border-color: #D8DBD7;    
+			}
+
+	img {
+		border: 2;
+		border-style: solid;
+	    border-color: #D8DBD7;   
+	}
+	.mySlides {
+	    display:none;
+	   height: 400px;
+	   width: 400px;
+	    	}
+	 .redemption {
+	 	
+	 	height: 50%;
+	 }
+
+</style>
+<body>
+	<div class="header">
+		<img src="Smart-Start-Massachusetts-Outline11.jpg" style="height: 150px;width: 200px;">
+	</div>
+	<p></p>
+	
+	<div class="topnav">
+	  <a href="site home.html">Home</a>
+	  <a href="somerville.html">Somerville</a>
+	  <a href="boston.html">Boston</a>
+	  <a href="extra info.html">Survey</a>
+	</div>
+	<p></p>
+
+	<div class="row"> 
+			<div class="column" id="Left">
+				<!-- Redemption -->
+				<div class="redemption">
+					<a href="http://www.redemptiontattoo.com/Artist.asp?ArtistID=28105&Akey=XAPSX3K7&ajx=1"><img src="redemption.jpg" alt="redemption logo" style="width:75% ;height:50%; right: 100px;"> </a>
+						<p></p>
+
+						<span class="text_bg">Redemption Tattoo is a relatively small shop located just before Porter square.</span> <span class="text_bg"> Redemption doesn't boast many locations or many artists like the Somerville</span> <span class="text_bg">shops but it does offer quality work. While the styles may not vary as much</span><span class="text_bg"> you can get a good solid traditional or black and grey tattoo here.</span>
+
+						<p></p>
+
+							<span class="text_bg">Locations:Cambrdige</span><br>
+							<span class="text_bg">Artist:Jebb Riley and Adam LoRusso</span>
+
+						<p></p>
+						<p></p>
+		<!-- Chameleon begins -->
+					<div class="chameleon">
+						<a href="http://www.chameleonbodyarts.com/"><img src="chameleon.jpg" alt="Chameleon Logo" style="width:60%;height:60% ;"> </a>
+
+						<p></p>
+
+						<span class="text_bg">If someone wanted a tattoo in Harvard square then the place to go is</span><span class="text_bg"> Chameleon Tattoo & Body Piercing. While not being that big, it constantly gets</span> <span class="text_bg"> new and diverse customers who are either passing by or coming to study at</span><span class="text_bg"> the nearby University.</span>
+
+							<p></p>
+
+							<span class="text_bg">Locations:Cambrdige</span><br>
+							<span class="text_bg">Artist:Jared Scott and Joseph Boo</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+					<div class="row"> 
+						<div class="column" id="Right">
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="jebb/jebb1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jebb/jebb2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jebb/jebb3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jebb/jebb4.jpg" style="">
+							</div>
+							
+							<div class="w3-content w3-display-container">
+								<img class="mySlides w3-animate-fading" src="adam/adam1.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="adam/adam2.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="adam/adam3.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="adam/adam4.jpg" style="">
+							</div>
+
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="jared/jared1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jared/jared2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jared/jared3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="jared/jared4.jpg" style="">
+							</div>
+							
+							<div class="w3-content w3-display-container">
+								<img class="mySlides w3-animate-fading" src="boo/boo1.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="boo/boo2.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="boo/boo3.jpg" style="">
+								<img class="mySlides w3-animate-fading" src="boo/boo4.jpg" style="">
+						</div>
+					</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);    
+} 
+</script>
+</body>
+</html>

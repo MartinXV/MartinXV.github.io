@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>Somerville</title>
+<link rel="stylesheet" href="style.css">
+<meta name="keywords" content="Somerville,Empire,Tattoo,Company">
+  <meta name="author" content="Pedro Martins">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	
+	#Left.column {
+		float: left;
+		position: relative;
+		left:150px;	
+		width: 40%;
+						}
+
+	#Right.column {
+		float: right;
+		position: relative;
+		right:250px;
+		top: 200px;
+					}
+
+	.BostonTat {
+				}
+	
+	.empireTat {	
+				}
+
+	.text_bg{
+	    background-color: #4D483D;
+	    border-style: solid;
+	    border-color: #D8DBD7;    
+			}
+
+	img {
+		border: 2;
+		border-style: solid;
+	    border-color: #D8DBD7;   
+	}
+	.mySlides {
+	    display:none;
+	   height: 350px;
+	   width: 350px;
+	    	}
+
+</style>
+<body>
+	<div class="header">
+		<img src="Smart-Start-Massachusetts-Outline11.jpg" style="height: 150px;width: 200px;">
+	</div>
+	<p></p>
+	
+	<div class="topnav">
+	  <a href="site home.html">Home</a>
+	  <a href="cambridge.html">Cambridge</a>
+	  <a href="boston.html">Boston</a>
+	  <a href="extra info.html">Survey</a>
+	</div>
+	
+	<p></p>
+	
+	<!-- Left Column -->
+		<div class="row"> 
+			<div class="column" id="Left">
+				<!-- Boston tattoo company begins -->
+				<div class="BostonTat">
+					<a href="https://bostontattoo.com/locations/somerville/"><img src="boston-tattoo-logo.png" alt="Boston Tattoo Company Logo" style="width:75% ;height:75%; right: 100px;"> </a>
+						<p></p>
+
+				
+					<span class="text_bg">Established in December, 2004, the Boston Tattoo Company is the Boston</span><span class="text_bg"> area’s most respected studio. We have been recognized by numerous Greater-</span><span class="text_bg">Boston publications; such as The Phoenix, Somerville Scout, and Reader’s</span><span class="text_bg"> Choice, as the best tattoo & body piercing studio! </span>
+		
+						<p></p>
+
+							<span class="text_bg">Locations include: Medford, Somerville, Cambrdige</span><br>
+							<span class="text_bg">Artist:Nick Bratkon and Alicia Thomas </span>
+						
+						<p></p>
+						<p></p>
+		<!-- Empire Tattoo begins -->
+					<div class="empireTat">
+						<a href="https://empiretattooinc.com/location/somerville-ma/"><img src="empiretat.jpg" alt="Empire Tattoo Logo" style="width:60%;height:60% ;"> </a>
+						<p></p>
+						<p></p>
+						<span class="text_bg">While Empire isn't as well known as Boston Tattoo Company, it does have</span><span class="text_bg"> multiple locations. Unlike Boston Tattoo Company, not all of the locations are in</span><span class="text_bg"> Massachusetts. Two of their four locations are in Massachusetts while the other</span><span class="text_bg"> locations are in New Jersey and Pennsylvania. With over 40 artists in total,</span><span class="text_bg"> Empire Tattoo can offer any style a client can want.</span>
+					</div>
+
+					<p></p>
+
+							<span class="text_bg">Locations include: Quincy, Somerville, Clemton(NJ), Pittsburgh, PA</span><br>
+							<span class="text_bg">Artist:Neil England and Joe Garnett </span>
+							<p></p>
+							<p></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right Column (artist and image) -->
+
+		<div class="row"> 
+			<div class="column" id="Right">
+				<div class="w3-content w3-display-container">
+				  <img class="mySlides w3-animate-fading" src="nick/Nick Bratkon new.jpg" style="">
+				  <img class="mySlides w3-animate-fading" src="nick/nick1.jpg" style="">
+				  <img class="mySlides w3-animate-fading" src="nick/nick2.jpg" style="">
+				  <img class="mySlides w3-animate-fading" src="nick/nick3.jpg" style="">
+				</div>
+				
+				<div class="w3-content w3-display-container">
+					<img class="mySlides w3-animate-fading" src="alicia/Alicia thomas new.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="alicia/alicia1.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="alicia/alicia2.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="alicia/alicia3.jpg" style="">
+				</div>
+
+				<div class="w3-content w3-display-container">
+					<img class="mySlides w3-animate-fading" src="neil/Neil England.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="neil/neil1.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="neil/neil2.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="neil/neil3.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="neil/neil4.jpg" style="">
+				</div>	
+				
+				<div class="w3-content w3-display-container">
+					<img class="mySlides w3-animate-fading" src="joe/Joe Garnett.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="joe/joe1.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="joe/joe2.jpg" style="">
+					<img class="mySlides w3-animate-fading" src="joe/joe3.jpg" style="">
+				</div>	
+			</div>
+		</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);    
+} 
+</script>
+	
+
+
+
+</body>
+</html>

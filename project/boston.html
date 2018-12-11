@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Boston</title>
+<link rel="stylesheet" href="style.css">
+<meta name="keywords" content="Boston,tattoo,Seaport">
+<meta name="author" content="Pedro Martins">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	
+	#Left.column {
+		float: left;
+		position: relative;
+		left:150px;	
+		width: 40%;
+						}
+
+	#Right.column {
+		float: right;
+		position: relative;
+		right:200px;
+		top: 200px;
+					}
+	.text_bg{
+	    background-color: #4D483D;
+	    border-style: solid;
+	    border-color: #D8DBD7;    
+			}
+
+	img {
+		border: 2;
+		border-style: solid;
+	    border-color: #D8DBD7;   
+	}
+	.mySlides {
+	    display:none;
+	   height: 500px;
+	   width: 500px;
+	    	}
+
+</style>
+<body>
+	<div class="header">
+		<img src="Smart-Start-Massachusetts-Outline11.jpg" style="height: 150px;width: 200px;">
+	</div>
+	<p></p>
+	
+	<div class="topnav">
+	  <a href="site home.html">Home</a>
+	  <a href="somerville.html">Somerville</a>
+	  <a href="cambridge.html">Cambridge</a>
+	  <a href="extra info.html">Survey</a>
+	</div>
+	<p></p>
+
+	<div class="row"> 
+			<div class="column" id="Left">
+				<!-- Seaport -->
+				<div class="seaport">
+					<a href="http://www.seaport.tattoo/"><img src="seaport.jpg" alt="Seaport Logo" style="width:75% ;height:50%; right: 100px;"> </a>
+						<p></p>
+
+						<span class="text_bg">Seaport Tattoo Company is small in numbers but that doesn't affect the quality</span><span class="text_bg"> of their work. While the best work that is produced from Seaport Tattoo</span><span class="text_bg"> Company is in black and grey it does not mean it is all they do.</span>
+
+							<p></p>
+
+							<span class="text_bg">Locations:South Boston</span><br>
+							<span class="text_bg">Artist:Ashley McNamara and Ben Thompson</span>
+							<p></p>
+
+				<div class="barber">
+						<a href="http://bostonbarber.com/tattoo/tattoo-artists/"><img src="barber.jpg" alt="Barber and tattoo Logo" style="width:60%;height:60% ;"> </a>
+
+						<p></p>
+
+						<span class="text_bg">If I am quite honest I don't know much about this place. The main reason I</span><span class="text_bg"> added this place in was because of how unique it is. It combines two things we</span><span class="text_bg"> wouldn't assume would go together. There are technically two locations, only</span><span class="text_bg"> one actually acts as a tattoo shop. The other location focuses on the other</span><span class="text_bg"> portion of the company's name, barber. </span>
+
+							<p></p>
+
+							<span class="text_bg">Locations: North End</span><br>
+							<span class="text_bg">Artist:Catarina Quintino and Lauchie Macdonald</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="row"> 
+						<div class="column" id="Right">
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="ashley/Ashley.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ashley/ashley1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ashley/ashley2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ashley/ashley3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ashley/ashley4.jpg" style="">
+							</div>
+							
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="ben/ben.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ben/ben1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ben/ben2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ben/ben3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="ben/ben4.jpg" style="">
+							</div>
+
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="catarina/catarina.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="catarina/catarina1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="catarina/catarina2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="catarina/catarina3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="catarina/catarina4.jpg" style="">
+							</div>
+							
+							<div class="w3-content w3-display-container">
+							  <img class="mySlides w3-animate-fading" src="lauchie/lauchie.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="lauchie/lauchie1.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="lauchie/lauchie2.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="lauchie/lauchie3.jpg" style="">
+							  <img class="mySlides w3-animate-fading" src="lauchie/lauchie4.jpg" style="">
+							</div>
+					</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);    
+} 
+</script>
+
+
+
+
+
+</body>
+</html>

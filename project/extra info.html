@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Survey</title>
+<link rel="stylesheet" href="style.css">
+<meta name="keywords" content="Boston,tattoo,Seaport">
+<meta name="author" content="Pedro Martins">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	.text_bg{
+	    background-color: #4D483D;
+	    border-style: solid;
+	    border-color: #D8DBD7;    
+			}
+	.mySlides {
+	    display:none;
+	   height: 500px;
+	   width: 500px;
+	    	}
+	 input#submit {
+		display:block;
+		background-color:#4D483D;
+		font-weight:bold;
+		padding: 20px;
+		font-size: 1.5em;
+		color: #E1CCAF;
+		}
+
+	form {
+		margin-left: 2%;
+	}
+	img {
+		border: 2;
+		border-style: solid;
+	    border-color: #D8DBD7; 
+
+</style>
+<body>
+	<div class="header">
+		<img src="Smart-Start-Massachusetts-Outline11.jpg" style="height: 150px;width: 200px;">
+	</div>
+	<p></p>
+	
+	<div class="topnav">
+	  <a href="site home.html">Home</a>
+	  <a href="somerville.html">Somerville</a>
+	  <a href="cambridge.html">Cambridge</a>
+	  <a href="boston.html">Boston</a>
+	</div>
+	<p></p>
+
+
+<form action="https://idesweb.bc.edu/class/results.php" method="post">
+  Enter Your name:<br>
+	  <input type="text" name="firstname" value="">
+	  <br><br>
+
+	<fieldset>
+	  	<legend>Favorite Area</legend>
+		  <input type="radio" name="option1" value="1"> Somerville<br>
+		  <input type="radio" name="option2" value="2"> Cambridge<br>
+		  <input type="radio" name="option3" value="3"> Boston<br>
+		  <input type="radio" name="option4" value="4"> No preference<br>
+	  </fieldset><br>
+
+	<fieldset>
+	  	<legend>What styles of tattoo do you like?</legend>
+		  <input type="checkbox" name="Traditional" value="1">Traditional<br>
+		  <input type="checkbox" name="Neo Traditional" value="2">Neo Traditional<br>
+		  <input type="checkbox" name="Japanese" value="3">Japanese<br>
+		  <input type="checkbox" name="Black and Grey" value="2">Black and Grey<br>
+		  <input type="checkbox" name="Realism" value="3">Realism<br>
+	  </fieldset><br>
+
+	<input id='submit' type="submit" value="Submit">
+</form> 

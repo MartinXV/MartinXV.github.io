@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>MBA Entrance</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  body {
+    text-align: center;
+  }
+  img {
+    border: 2;
+    border-style: solid;
+      border-color: #D8DBD7;   
+  }
+  .text_bg{
+      background-color: #4D483D;
+      border-style: solid;
+      border-color: #D8DBD7;    
+      }
+
+</style>
+
+<body>
+
+<div class="header">
+  <img src="Smart-Start-Massachusetts-Outline11.jpg" style="height: 150px;width: 200px;">
+</div>
+
+<br>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides w3-animate-fading" src="neil/neil1.jpg" style="">
+  <img class="mySlides w3-animate-fading" src="boo/boo4.jpg" style="">
+  <img class="mySlides w3-animate-fading" src="ashley/ashley4.jpg" style="">
+  <img class="mySlides w3-animate-fading" src="ashley/ashley2.jpg" style="">
+  <img class="mySlides w3-animate-fading" src="jared/jared1.jpg" style="">
+  <img class="mySlides w3-animate-fading" src="joe/joe1.jpg" style="">
+
+</div>
+
+<br><br>
+
+<span class="text_bg">By clicking the button you will be entering a website that has been made with the sole intent of showing the viewer different tattoo shops in Massachusetts. Along with showing you the tattoo shops</span><span class="text_bg"> there is also names of artists and a couple of pieces that they have made If at anytime you wish to visit the tattoo shops website then please click the shops logo and it will take you there. All images</span><span class="text_bg"> displayed on this website are owned by the artitst.</span><br><br>
+<a href="site home.html">
+<img border="0" alt="Enter" src="ENTERbutton.jpg" width="100" height="100">
+</a>
+
+<script>
+  
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+} 
+</script>
+
+</body>
+</html>

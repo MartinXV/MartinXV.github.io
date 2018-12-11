@@ -1,0 +1,49 @@
+  .header {
+    background-color: #D8DBD7;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    }
+
+  .mySlides {
+    display:none;
+    width: 540px;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  body {
+    background-image: url(homeback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-postion:center;
+    color:#E1CCAF;
+    }
+    /* Style the top navigation bar */
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	/* Style the topnav links */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	/* Change color on hover */
+	.topnav a:hover {
+	  background-color: #4D483D;
+	  color: #E1CCAF;
+	}
+
+/* hover property so upon going over something it changes, best bet is to do enlarge so something like nav a hover:
+
+Make sure page is selected is enlarged or has a boarder around the button*/
+
+
